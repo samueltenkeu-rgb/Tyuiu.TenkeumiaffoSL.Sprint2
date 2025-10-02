@@ -9,10 +9,12 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Test
         public void ValidCalculateXGreaterThan3()
         {
             DataService ds = new DataService();
-            double x = 4.0;
+            double x = 5.0;
             double res = ds.Calculate(x);
-            // 4 - 12*4 + cos(4) = 4 - 48 + (-0.6536) = -44.6536 → -44.7
-            Assert.AreEqual(-44.7, res);
+            // 5 - 12*5 + cos(5) = 5 - 60 + 0.2837 = -54.7163 → -54.716
+            Assert.AreEqual(-54.716, res);
         }
+
+
     }
 }
