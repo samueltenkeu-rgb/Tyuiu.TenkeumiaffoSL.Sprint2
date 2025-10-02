@@ -72,7 +72,8 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task5.V8.Lib
                 }
             }
 
-            return $"{prevDay}.{prevMonth}";
+            // ИЗМЕНЕНИЕ: форматируем с ведущими нулями
+            return $"{prevDay:D2}.{prevMonth:D2}";
         }
     }
 }
