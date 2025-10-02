@@ -11,6 +11,7 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task6.V11.Lib
             int nextMonth = m;
             int nextYear = g;
 
+            // Проверяем, не является ли текущий день последним днем месяца
             bool isLastDayOfMonth = m switch
             {
                 1 or 3 or 5 or 7 or 8 or 10 or 12 => n == 31,  // Месяцы с 31 днем
@@ -24,6 +25,7 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task6.V11.Lib
                 nextDay = 1;
                 nextMonth = m + 1;
 
+                // Если декабрь, переходим к следующему году
                 if (m == 12)
                 {
                     nextMonth = 1;
@@ -31,7 +33,8 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task6.V11.Lib
                 }
             }
 
-            return $"{nextDay}.{nextMonth}.{nextYear}";
+            // ИЗМЕНЕНИЕ: форматируем с ведущими нулями для дня и месяца
+            return $"{nextDay:D2}.{nextMonth:D2}.{nextYear}";
         }
     }
 }
