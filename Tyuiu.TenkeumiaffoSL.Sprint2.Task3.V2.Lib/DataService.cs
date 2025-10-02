@@ -1,6 +1,5 @@
 ﻿using System;
 using tyuiu.cources.programming.interfaces.Sprint2;
-using Tyuiu.Cources.Programming.Interfaces.Sprint2;
 
 namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Lib
 {
@@ -34,7 +33,7 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Lib
                 // x < -6: x + 10x - (1/x⁴)
                 // Проверка деления на ноль
                 if (Math.Pow(x, 4) == 0)
-                    throw new ArgumentException("Деление на ноль");
+                    throw new ArgumentException("Деление на ноль");   
 
                 y = x + 10 * x - (1 / Math.Pow(x, 4));
             }
