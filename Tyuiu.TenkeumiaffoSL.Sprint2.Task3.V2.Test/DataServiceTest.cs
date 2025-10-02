@@ -13,7 +13,7 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Test
             double res = ds.Calculate(x);
             // 5 - 12*5 + cos(5) = 5 - 60 + 0.2837 = -54.7163 → -54.716    
             Assert.AreEqual(-54.716, res);
-        }
+        } 
 
 
     }

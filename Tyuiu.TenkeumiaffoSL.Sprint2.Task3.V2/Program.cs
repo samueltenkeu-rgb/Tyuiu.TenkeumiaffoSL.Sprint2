@@ -21,7 +21,7 @@ double x = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-Console.WriteLine("***************************************************************************");
+Console.WriteLine("**************************************** ***********************************");
 
 DataService ds = new DataService();
 double result = ds.Calculate(x);

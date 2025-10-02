@@ -13,7 +13,7 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Lib
             {
                 // x > 3: x - 12x + cos(x)
                 y = x - 12 * x + Math.Cos(x);
-            }
+            }   
             else if (x == 2)
             {
                 // x = 2: x - (1/x)
