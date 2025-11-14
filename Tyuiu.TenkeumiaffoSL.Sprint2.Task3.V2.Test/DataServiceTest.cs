@@ -1,4 +1,5 @@
-﻿using Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Lib;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Lib;
 
 namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Test
 {
@@ -10,11 +11,11 @@ namespace Tyuiu.TenkeumiaffoSL.Sprint2.Task3.V2.Test
         {
             DataService ds = new DataService();
             double x = 5.0;
+
+            // 5 - 60 + cos(5) = -55 + 0.28366 = -54.71634 → -54.716
             double res = ds.Calculate(x);
-            // 5 - 12*5 + cos(5) = 5 - 60 + 0.2837 = -54.7163 → -54.716    
+
             Assert.AreEqual(-54.716, res);
-        } 
-
-
+        }
     }
 }
